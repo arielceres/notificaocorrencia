@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+html {
+    font-family: "Roboto";
+    overflow-y: hidden;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+.btn {
+    margin-top: 3rem;
+    background-color: #6c63ff;
+    border-radius: 9px;
+    border: 1px solid #7070d4;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    font-family: Arial;
+    font-size: 17px;
+    padding: 12px 31px;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #2f6627;
+}
+
+.btn:hover {
+    background-color: #7070d4;
+}
+
+.btn:active {
+    position: relative;
+    top: 1px;
+}
+
+.inputForm {
+    width: 50%;
+    padding: 0.5rem;
+    transition: 0.5s ease-in-out;
+    border: none;
+    border-bottom: 2px solid rgb(134, 134, 134);
+}
+
+.inputForm:focus {
+    padding: 0.5rem;
+    border: 2px solid rgb(134, 134, 134);
+    border-radius: 5rem;
+    outline: none;
+}
+
+
+/* Left Section */
+
+.leftSection {
+    background-color: #8080DA;
+    padding: 3rem;
+    height: 100vh;
+}
+
+.leftSection .text {
+    width: 400px;
+}
+
+.leftSection .text h1 {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 3rem;
+}
+
+.leftSection .text h3 {
+    font-size: 22px;
+    margin-bottom: 3rem;
+}
+
+.leftSection img {
+    width: 100%;
+}
+
+.leftSection .image {
+    display: flex;
+    justify-content: center;
+    margin-top: 10rem;
+}
+
+
+/* Right Section */
+
+.rightSection {
+    background-color: #f7f7f7;
+}
+
+@media (max-width: 992px) {
+    html {
+        overflow-y: auto;
+    }
+    body {
+        margin-bottom: 2rem;
+    }
+    main {
+        grid-template-columns: 1fr;
+    }
+    .inputForm {
+        width: 100%;
+    }
+}

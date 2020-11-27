@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<head>
+    <title>Cadastro de Usuário</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/cadastrar.css">
+</head>
+<body>
+
+<main>
+	<section class="leftSection">
+		<div class="text">
+			<h3>Hackathon</h3>
+			<h1>
+      Vamos cadastrar uma ocorrência! 
+      <br><br>
+      É bem rápido</h1>
+		</div>
+
+		<div class="image">
+			<img src="img/usuarios.svg" alt="">
+		</div>
+	</section>
+
+	<section class="rightSection">
+		<div class="usuario">
+			<div class="voltar">
+				<a href="login.html"><img src="img/back.svg" alt="voltar" width="30px"></a>
+				<a href="login.html"><p>Voltar</p></a>
+			</div>
+			<h1>Cadastro de Ocorrência</h1>
+			
+			<form method="POST" id='#' action="ocorrencia"><br/>
+				<p>Tipo</p>
+        <select name="tipo" id="tipo">
+          <option selected disabled="disabled">Selecione uma ocorrência</option>
+          <option value="acidente">Acidente de trânsito</option>
+          <option value="incendio">Incêndio</option>
+          <option value="roubo">Roubo/Furto</option>
+        </select>
+
+				<p>Descrição</p>
+        <textarea name="descricao" id="descricao" cols="45" rows="10"></textarea>
+
+        <br><br>
+        
+        <input name="myFile" type="file" id="imagem">
+
+        <br>
+				
+				<butto class="btn" id="bt-inserir" name='bt-inserir' onclick="validar();">Inserir</butto><br/>
+			</form>
+		</div>
+	</section>
+</main>
+
+    
+
+</body>
+
+</html>

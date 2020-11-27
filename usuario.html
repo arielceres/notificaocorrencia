@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<head>
+    <title>Cadastro de Usuário</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/cadastrar.css">
+</head>
+<body>
+
+<main>
+	<section class="leftSection">
+		<div class="text">
+			<h3>Hackathon</h3>
+			<h1>Ainda não tem cadastro? Não tem problema!</h1>
+		</div>
+
+		<div class="image">
+			<img src="img/usuarios.svg" alt="">
+		</div>
+	</section>
+
+	<section class="rightSection">
+		<div class="usuario">
+			<div class="voltar">
+				<a href="login.html"><img src="img/back.svg" alt="voltar" width="30px"></a>
+				<a href="login.html"><p>Voltar</p></a>
+			</div>
+			<h1>Cadastro de Usuário</h1>
+			
+			<form method="POST" id='frm1' action="usuario.html"><br/>
+				<p>Nome</p>
+				<input class="inputForm" type="text" id="nome" name="nome" required/>
+
+				<p>CPF</p>
+				<input class="inputForm" type="text" id="cpf" name="cpf" required/>
+
+				<p>Email</p>
+				<input class="inputForm" type="email" id="email" name='email1' required/>
+
+				<p>Senha</p>
+				<input class="inputForm" type="password" id="senha1" name='senha1' required/>
+
+				<p>Confirmação Senha</p>
+				<input class="inputForm" type="password" id="senha2" name="senha2" required/>
+
+				<p>Telefone</p>
+				<input class="inputForm" type="tel" id="telefone" name="telefone" required/>
+				<br>
+				
+				<butto class="btn" id="bt-inserir" name='bt-inserir' onclick="validar();">Inserir</butto><br/>
+			</form>
+		</div>
+	</section>
+</main>
+
+    
+
+</body>
+
+</html>

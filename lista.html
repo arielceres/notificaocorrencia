@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Chamados</title>
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/main.css">
+		<link rel="stylesheet" href="css/lista.css">
+	</head> 
+
+	<body>
+
+	<main>
+	<section class="leftSection">
+		<div class="text">
+			<h3>Hackathon</h3>
+			<h1>Vamos ver o histórico de ocorrências!</h1>
+		</div>
+
+		<div class="image">
+			<img src="img/chamados.svg" alt="">
+		</div>
+	</section>
+
+		<section class="rightSection">
+			<div class="lista">
+
+				<h1>Ocorrências</h1>
+
+				<form method='post' action='lista.html'>
+				Buscar <input type="text" id='busca' name='busca' size=30px>
+				<button class="btn" id='bt1' name='bt1'>Ok</button>
+				</form>
+
+				<form method='post' action='lista.html'>
+				<button class="btn" id='bt2' name='bt2'> + Nova Ocorrência</button>
+					<br><br>
+
+				<table border="1px" width="60%"> 
+					<tr>
+						<th>ID</th>
+						<th>Tipo</th>
+						<th>Descrição</th>
+						<th>Data</th>
+						<th>latitude</th>
+						<th>longitude</th>
+					</tr>
+						
+				</table>
+			</div>
+		
+		</section>
+	</main>
+
+		
+		
+	</body>
+</html>

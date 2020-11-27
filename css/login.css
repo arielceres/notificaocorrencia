@@ -1,0 +1,26 @@
+.rightSection {
+    background-color: #f7f7f7;
+    display: flex;
+    justify-content: center;
+}
+
+.rightSection .form {
+    width: 50%;
+    margin-top: 7rem;
+}
+
+.rightSection .form h1 {
+    font-size: 28px;
+    margin-bottom: 3rem;
+}
+
+.rightSection .form p {
+    font-size: 18px;
+    font-weight: 700;
+    margin: 1rem 0;
+}
+
+.rightSection .form p {
+    margin: 1rem 0;
+    font-weight: 500;
+}
